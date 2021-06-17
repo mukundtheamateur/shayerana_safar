@@ -6,47 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shayerana safar</title>
     <link rel="stylesheet" href="1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/09a860f716.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 <body>
       <header>
           <h1>Shayerana Safar</h1>
       </header>
-      <nav>
-          <a href="#">Home</a>
-          <a href="#">Storytellings</a>
-          <a href="#">Gazal</a>
-          <a href="#">Nazm</a>
-          <a href="#">Login/signUP</a>
-      </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Shayerana Safar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Storytellings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gazal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nazm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login/signUP</a>
+        </li>
+        <li class="nav-item">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            My Content
+          </a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">MY CONTENT</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      What I do 
+    </div>
+  </div>
+
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">My Content</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        My contents
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          Poetry
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Urdu</a></li>
+          <li><a class="dropdown-item" href="#">hindi</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
       <main>
-          <section>
+          <div class="container">
               <h2>My Poetries</h2>
-             <video src="video/WhatsApp Video 2021-06-13 at 13.02.51 (1).mp4" width="33%" controls></video>
-             <video src="video/WhatsApp Video 2021-06-13 at 13.02.51.mp4" width="33%" controls></video>
-             <video src="video/WhatsApp Video 2021-06-13 at 13.26.32 (3).mp4" width="33%" controls></video>
+              <div class="content">
+             <video src="video/WhatsApp Video 2021-06-13 at 13.02.51 (1).mp4" style="display:contents" controls></video></div>
+             <div class="content"><video src="video/WhatsApp Video 2021-06-13 at 13.02.51.mp4" style="display:contents" controls></video></div>
+             <div class="content"><video src="video/WhatsApp Video 2021-06-13 at 13.26.32 (3).mp4" style="display:contents" controls></video></div>
           </section>
+          </div>
+          <div class="container-fluid">
           <section>
               <h2>Reels</h2>
               <video src="video/WhatsApp Video 2021-06-13 at 13.26.32 (1).mp4" width="33%" controls></video>
               <video src="video/WhatsApp Video 2021-06-13 at 13.26.32 (2).mp4" width="33%" controls></video>
               <video src="video/WhatsApp Video 2021-06-13 at 13.26.32 (3).mp4" width="33%" controls></video>
           </section>
+        </div>
+        <div class="container-fluid">
           <section>
-              <h2>You tube</h2>
+              <h2>Youtube</h2>
               <iframe width="33%" src="https://www.youtube.com/embed/fk7t4O1jQp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <iframe width="33%" src="https://www.youtube.com/embed/stc_GtyWJY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <iframe width="33%" src="https://www.youtube.com/embed/vgkDvB5igGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </section>
+          </div>
+          <div class="container-fluid">
           <section>
               <h2>Our Founder</h2>
               <img src="image/20170828_120258.jpg" width="25%" alt="This is Mohammad Ali">
               <h3>Mohammad Ali</h3>
-              <a href="https://youtube.com/c/shayeranasafar" target="_blank" rel="noopener noreferrer">YouTube</a>&nbsp;
-              <a href="https://instagram.com/shayerana_safar?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">instagram</a>&nbsp;
-              <a href="https://www.linkedin.com/in/mohammad-ali-8a1946201" target="_blank" rel="noopener noreferrer">linkedin</a>&nbsp;
+              <a href="https://youtube.com/c/shayeranasafar" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube youtube">Youtube</i></a>&nbsp;
+              <a href="https://instagram.com/shayerana_safar?utm_medium=copy_link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram Instagram">Instagram</i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/mohammad-ali-8a1946201" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin">linkedin</i></a>&nbsp;
               <h4>Writer, Poet, Storyteller, Youtuber</h4>
               <h5>I am 2nd year engineering student pursuing my b.tech degree from Chandigarh engineering college in Electronics and communication. I have an experience of teaching Chemistry and maths. I have also worked as a Subject matter expert of mathematics. So I am an experience candidate. Mathematics is something that excites me and I used to involve myself in clearing the doubts of student in maths.</h5>
           </section>
+          </div>
       </main>
       <footer>
           <a href="#">FAQ</a>
